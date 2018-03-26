@@ -7,14 +7,14 @@
 window.streams = {};
 streams.home = [];
 streams.users = {};
-streams.users.shawndrost = [];
-streams.users.sharksforcheap = [];
-streams.users.mracus = [];
-streams.users.douglascalhoun = [];
+streams.users.shawndrost = []; //user
+streams.users.sharksforcheap = []; //
+streams.users.mracus = []; // 
+streams.users.douglascalhoun = []; //
 window.users = Object.keys(streams.users);
 
 // utility function for adding tweets to our data structures
-var addTweet = function(newTweet){
+var addTweet = function(newTweet){ //parameter is a object. Line 41
   var username = newTweet.user;
   streams.users[username].push(newTweet);
   streams.home.push(newTweet);
@@ -33,7 +33,7 @@ var objects = ['my', 'your', 'the', 'a', 'my', 'an entire', 'this', 'that', 'the
 var nouns = ['cat', 'koolaid', 'system', 'city', 'worm', 'cloud', 'potato', 'money', 'way of life', 'belief system', 'security system', 'bad decision', 'future', 'life', 'pony', 'mind'];
 var tags = ['#techlife', '#burningman', '#sf', 'but only i know how', 'for real', '#sxsw', '#ballin', '#omg', '#yolo', '#magic', '', '', '', ''];
 
-var randomMessage = function(){
+var randomMessage = function(){ //returns a random msg as a string.
   return [randomElement(opening), randomElement(verbs), randomElement(objects), randomElement(nouns), randomElement(tags)].join(' ');
 };
 

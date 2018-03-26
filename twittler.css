@@ -1,0 +1,12 @@
+body {
+    background-color: cyan;
+}
+body {
+    display : table;
+    margin:auto;
+    background-color: white;
+}
+.head {
+    display : table;
+    margin : auto;
+}
