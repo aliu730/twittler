@@ -1,12 +1,51 @@
 body {
     background-color: cyan;
 }
-body {
+.textbody {
     display : table;
     margin:auto;
     background-color: white;
+    border: 2px solid #060701;
+    padding: 10px 15px;
 }
 .head {
     display : table;
     margin : auto;
 }
+.newTweet {
+    display : table;
+    margin:auto;
+    background: #c0cc7d url("tick.png") 20px 50% no-repeat;
+    border: 2px solid #4f5500;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 20px 15px 50px;
+}
+.backBut {
+    display : table;
+    margin:auto;
+    background: #c0cc7d url("tick.png") 20px 50% no-repeat;
+    border: 2px solid #4f5500;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 15px 50px 15px 50px;
+}
+
+.tweet {
+    border-top: 1px solid black;
+    margin-bottom: 3px;
+}
+
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
